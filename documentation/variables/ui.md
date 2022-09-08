@@ -80,12 +80,14 @@
 `<element>:set_visible(visible: boolean):` <mark style="color:purple;">`boolean`</mark>
 `Sets the visibility of the element`
 
-### :set_items() ( works only for add_combobox )
+## Combobox functions:
+
+### :set_items()
 
 `<element>:set_items(items: { , ... }):` <mark style="color:purple;">`items: string`</mark>
 `Sets items for combobox element`
 
-### :get_items() ( works only for add_combobox )
+### :get_items()
 
 `<element>:get_items():` <mark style="color:purple;">`items: string`</mark>
 `Returns items from combobox element`
