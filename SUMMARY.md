@@ -6,7 +6,7 @@
 ## Useful information
 
 * [🔌 For beginners ](useful-information/quick-start.md)
-* [⛩ Common knowledge](useful-information/common-knowledge.md)
+* [♟ Common knowledge](useful-information/common-knowledge.md)
 
 ## documentation
 

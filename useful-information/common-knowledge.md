@@ -1,4 +1,4 @@
-# ⛩ Common knowledge
+# ♟ Common knowledge
 
 ### Script location
 
