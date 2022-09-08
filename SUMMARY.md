@@ -10,8 +10,11 @@
 
 ## documentation
 
+* [⛓ Common](documentation/common/README.md)
+  * [📞 Callbacks list](documentation/common/callbacks-list.md)
 * [⚙ Variables](documentation/variables/README.md)
   * [💻 ui](documentation/variables/ui.md)
-* [🔢 Enumerations](documentation/enumerations.md)
+* [🔢 Enumerations](documentation/enumerations/README.md)
+  * [🎞 enum\_frames](documentation/enumerations/enum\_frames.md)
 * [📚 Examples](documentation/examples.md)
   * [⚙ Tab system](documentation/examples/tab-system.md)
