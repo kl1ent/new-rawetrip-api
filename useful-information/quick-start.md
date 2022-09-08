@@ -1,4 +1,4 @@
-# 📲 Quick start
+# 📲 For beginners&#x20;
 
 ## :beginner: Beginner's guide
 

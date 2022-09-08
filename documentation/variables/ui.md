@@ -4,6 +4,6 @@
 
 `ui.add_checkbox(name: string):` <mark style="color:purple;">`MenuItem`</mark>
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| Name     | Type         | Description | Required |
+| -------- | ------------ | ----------- | -------- |
+| **name** | **`String`** | Item name   | +        |
