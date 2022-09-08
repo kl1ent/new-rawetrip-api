@@ -1,6 +1,1 @@
----
-description: Welcome to the official RaweTrip wiki!
----
-
-# Welcome
-
+# new-rawetrip-api

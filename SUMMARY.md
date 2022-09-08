@@ -2,3 +2,13 @@
 
 * [Welcome](README.md)
 * [Official discord](https://discord.gg/zn6an9BpQf)
+
+## Useful information
+
+* [📲 Quick start](useful-information/quick-start.md)
+* [⛩ Common knowledge](useful-information/common-knowledge.md)
+
+## documentation
+
+* [⚙ Variables](documentation/variables/README.md)
+  * [💻 ui](documentation/variables/ui.md)
