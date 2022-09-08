@@ -13,5 +13,5 @@
 * [⚙ Variables](documentation/variables/README.md)
   * [💻 ui](documentation/variables/ui.md)
 * [🔢 Enumerations](documentation/enumerations.md)
-* [📚 Examples](documentation/examples/README.md)
+* [📚 Examples](documentation/examples.md)
   * [⚙ Tab system](documentation/examples/tab-system.md)
