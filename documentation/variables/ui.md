@@ -63,6 +63,14 @@
 | -------- | ------------ | ----------- |
 | **name** | **`String`** | Item name   |
 
+### add_hotkey
+
+`ui.add_hotkey(name: string):` <mark style="color:purple;">`MenuItem`</mark>
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **name** | **`String`** | Item name   |
+
 ## Functions:
 
 ### :get()
@@ -91,3 +99,10 @@
 
 `<element>:get_items():` <mark style="color:purple;">`items: string`</mark>
 `Returns items from combobox element`
+
+## Hotkey additive functions:
+
+### :get_mode()
+
+`<element>:get_mode():` <mark style="color:purple;">`mode: number`</mark>
+`Returns mode from hotkey element`
