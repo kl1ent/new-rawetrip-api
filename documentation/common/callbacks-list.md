@@ -14,7 +14,7 @@ cheat.push_callback("on_event", function(event)
 end)
 ```
 
-## How to use events:
+## How to use callbacks:
 
 ### on\_paint
 
@@ -93,3 +93,17 @@ cheat.push_callback("on_unload", function()
     cheat.notify("Script unloaded!")
 end)
 ```
+
+### on\_shot
+
+```lua
+cheat.push_callback("on_shot", function(shot_info)
+    cheat.notify(shot_info.target_name)
+end)
+```
+
+| Name               | Type         | Description |
+| ------------------ | ------------ | ----------- |
+| **target\_name**   | **`String`** | Target name |
+| **result**         | **`String`** | Shot result |
+| **client\_hitbox** | **`String`** | Hitbox      |
