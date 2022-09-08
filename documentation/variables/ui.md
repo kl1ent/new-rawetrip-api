@@ -1,6 +1,6 @@
 # 💻 ui
 
-## Functions:
+## Elements:
 
 ### add_checkbox
 
@@ -62,3 +62,10 @@
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
 | **name** | **`String`** | Item name   |
+
+## Functions:
+
+### :get()
+
+`element:get():` <mark style="color:purple;">`MenuItem`</mark>
+`Returns the value received from the element`
