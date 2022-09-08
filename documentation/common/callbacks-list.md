@@ -10,7 +10,7 @@
 
 `on_frame_net: [stage]`
 
-`on_override_view:`
+`on_override_view: [view]`
 
 `on_event: [event]`
 
