@@ -7,31 +7,33 @@ To do something like this, you can refer to the [ui.md](../variables/ui.md "ment
 {% endhint %}
 
 ```lua
---> Main table
-local example = {}
+--> New checkbox
+local checkbox = ui.add_checkbox("Checkbox")
 
---> Combobox with tab names
-local tabs = ui.add_combobox("tabs", { "first", "second", "third" })
+--> New slider
+local slider = ui.add_sliderint("Slider")
 
---> Elements in first tab
-example.first_tab.checkbox = ui.add_checkbox("Checkbox")
-example.first_tab.slider = ui.add_sliderint("Slider")
-
---> Elements in second tab
-example.second_tab.combobox = ui.add_combobox("Combo", { "1", "2", "3" })
-example.second_tab.button = ui.add_button("Button")
+--> New combo
+local combo = ui.add_combobox("Combo", { "First", "Second", "Third" })
 
 cheat.push_callback("on_paint", function()
 
-    --> Parsing first tab
-    for key, val in pairs(example.first_tab) do
-        val:set_visible(tabs:get() == 0 and true or false)
-    end
+    --> Checkbox interaction
+    local checkbox_boolean = checkbox:get() --> Returns boolean [ true / false ]
+    checkbox:set(true) --> Sets boolean [ true / false ]
+    checkbox:set_visible(false) --> Sets visible [ true / false ] - def: [true]
 
-    --> Parsing second tab
-    for key, val in pairs(example.second_tab) do
-        val:set_visible(tabs:get() == 1 and true or false)
-    end
-    
+    --> SliderInt interaction
+    local slider_number = slider:get() --> Returns number
+    slider:set(15) --> Sets number
+    slider:set_visible(false) --> Sets visible [ true / false ] - def: [true]
+
+    --> Combo interaction
+    local combo_number = combo:get() --> Returns number
+    combo:set(1) --> Sets select
+    combo:set_visible(false) --> Sets visible [ true / false ] - def: [true]
+    combo:get_items() --> Returns items: { , ... }
+    combo:set_items({ "1", "2", "3", "4", "5" }) --> Sets items
+
 end)
 ```
