@@ -7,6 +7,8 @@
 
 * [🔌 For beginners ](useful-information/quick-start.md)
 * [♟ Common knowledge](useful-information/common-knowledge.md)
+* [📚 Examples](useful-information/examples/README.md)
+  * [⚙ Tab system](useful-information/examples/tab-system.md)
 
 ## documentation
 
@@ -16,5 +18,3 @@
   * [💻 ui](documentation/variables/ui.md)
 * [🔢 Enumerations](documentation/enumerations.md)
   * [🎞 enum\_frames](documentation/enumerations/enum\_frames.md)
-* [📚 Examples](documentation/examples.md)
-  * [⚙ Tab system](documentation/examples/tab-system.md)
