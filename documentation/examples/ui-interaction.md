@@ -16,6 +16,9 @@ local slider = ui.add_sliderint("Slider")
 --> New combo
 local combo = ui.add_combobox("Combo", { "First", "Second", "Third" })
 
+--> New hotkey
+local hotkey = ui.add_hotkey("Hotkey")
+
 cheat.push_callback("on_paint", function()
 
     --> Checkbox interaction
@@ -30,10 +33,15 @@ cheat.push_callback("on_paint", function()
 
     --> Combo interaction
     local combo_number = combo:get() --> Returns number
+    local combo_items = combo:get_items() --> Returns items: { , ... }
     combo:set(1) --> Sets select
     combo:set_visible(false) --> Sets visible [ true / false ] - def: [true]
-    combo:get_items() --> Returns items: { , ... }
     combo:set_items({ "1", "2", "3", "4", "5" }) --> Sets items
+
+    --> Hotkey interaction
+    local hotkey_boolean = hotkey:get() --> Returns boolean [ true / false ]
+    local hotkey_mode = hotkey:get_mode() --> Returns number
+    hotkey:set_visible(false) --> Sets visible [ true / false ] - def: [true]
 
 end)
 ```
