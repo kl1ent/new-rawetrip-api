@@ -71,6 +71,31 @@
 | -------- | ------------ | ----------- |
 | **name** | **`String`** | Item name   |
 
+### get_keybind_state
+
+`ui.get_keybind_state(name: string):` `Returns hotkey state from menu`
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **name** | **`String`** | Item name   |
+
+### get_keybind_mode
+
+`ui.get_keybind_mode(name: string):` `Returns hotkey mode from menu`
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **name** | **`String`** | Item name   |
+
+### set_keybind_state
+
+`ui.set_keybind_state(name: string, var: boolean):` `Sets hotkey state from menu`
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **name** | **`String`** | Item name   |
+| **var** | **`Boolean`** | Item var   |
+
 ## Functions:
 
 ### :get()
