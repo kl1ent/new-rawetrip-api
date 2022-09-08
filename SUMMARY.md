@@ -10,6 +10,7 @@
 
 ## documentation
 
+* [🔢 Enumerations](documentation/enumerations.md)
 * [📚 Examples](documentation/examples.md)
 * [⚙ Variables](documentation/variables/README.md)
   * [💻 ui](documentation/variables/ui.md)
