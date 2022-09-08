@@ -9,6 +9,7 @@
 * [♟ Common knowledge](useful-information/common-knowledge.md)
 * [📚 Examples](documentation/examples.md)
   * [⚙ Tab system](documentation/examples/tab-system.md)
+  * [⚙ UI Interact](documentation/examples/ui-interact.md)
 
 ## documentation
 
