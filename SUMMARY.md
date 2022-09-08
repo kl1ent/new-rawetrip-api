@@ -1,3 +1,4 @@
 # Table of contents
 
-* [new-rawetrip-api](README.md)
+* [Welcome](README.md)
+* [Official discord](https://discord.gg/zn6an9BpQf)
