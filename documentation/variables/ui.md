@@ -67,5 +67,15 @@
 
 ### :get()
 
-`element:get():` <mark style="color:purple;">`MenuItem`</mark>
+`<element>:get():` <mark style="color:purple;">`boolean/number`</mark>
 `Returns the value received from the element`
+
+### :set()
+
+`<element>:set(var: boolean/number):` <mark style="color:purple;">`boolean/number`</mark>
+`Sets your value`
+
+### :set_visible()
+
+`<element>:set_visible(visible: boolean):` <mark style="color:purple;">`boolean`</mark>
+`Sets the visibility of the element`
