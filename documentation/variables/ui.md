@@ -80,7 +80,7 @@
 `<element>:set_visible(visible: boolean):` <mark style="color:purple;">`boolean`</mark>
 `Sets the visibility of the element`
 
-## Combobox functions:
+## Combobox additive functions:
 
 ### :set_items()
 
