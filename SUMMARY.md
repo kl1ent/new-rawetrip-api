@@ -23,7 +23,7 @@
   * [🎓 cheat](documentation/variables/cheat.md)
   * [💻 ui](documentation/variables/ui.md)
   * [🏙 render](documentation/variables/render.md)
-  * [🚶♂ entity](documentation/variables/entity.md)
+  * [🚶♂ 🚶♂ entity](documentation/variables/entity.md)
   * [🌎 globalvars](documentation/variables/globalvars.md)
   * [🛠 engine](documentation/variables/engine.md)
   * [🔩 utils](documentation/variables/utils.md)
