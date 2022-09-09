@@ -8,26 +8,26 @@
 Callbacks list: [callbacks-list.md](../common/callbacks-list.md "mention")
 {% endhint %}
 
-`cheat.push_callback(callback: string, function: func):`
+`cheat.push_callback(callback: string, function: function)`
 
-| Name              | Type         | Description |
-| ----------------- | ------------ | ----------- |
-| **callback name** | **`String`** | callback    |
-| **function**      | **`Func`**   | function    |
+| Name         | Type           | Description |
+| ------------ | -------------- | ----------- |
+| **callback** | **`string`**   | callback    |
+| **function** | **`function`** | function    |
 
 ### popup
 
-`cheat.popup(header: string, description: string):`
+`cheat.popup(header: string, description: string)`
 
 | Name            | Type         | Description |
 | --------------- | ------------ | ----------- |
-| **header**      | **`String`** | header      |
-| **description** | **`String`** | description |
+| **header**      | **`string`** | header      |
+| **description** | **`string`** | description |
 
 ### notify
 
-`cheat.notify(text: string):`
+`cheat.notify(text: string)`
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **text** | **`String`** | text        |
+| **text** | **`string`** | text        |

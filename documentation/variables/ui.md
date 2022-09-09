@@ -2,132 +2,156 @@
 
 ## Elements:
 
-### add_checkbox
+### add\_checkbox
 
 `ui.add_checkbox(name: string):` <mark style="color:purple;">`MenuItem`</mark>
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| **name** | **`string`** | Item name   |
 
-### add_combobox
+### add\_combobox
 
 `ui.add_combobox(name: string, items: { , ... }):` <mark style="color:purple;">`MenuItem`</mark>
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
-| **items** | **`String`** | Items   |
+| Name      | Type         | Description |
+| --------- | ------------ | ----------- |
+| **name**  | **`string`** | Item name   |
+| **items** | **`string`** | Items       |
 
-### add_sliderint
+### add\_sliderint
 
 `ui.add_sliderint(name: string, min: number, max: number):` <mark style="color:purple;">`MenuItem`</mark>
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
-| **min** | **`Number`** | Minimum value   |
-| **max** | **`Number`** | Maximum value   |
+| Name     | Type         | Description   |
+| -------- | ------------ | ------------- |
+| **name** | **`string`** | Item name     |
+| **min**  | **`number`** | Minimum value |
+| **max**  | **`number`** | Maximum value |
 
-### add_sliderfloat
+### add\_sliderfloat
 
 `ui.add_sliderfloat(name: string, min: number, max: number):` <mark style="color:purple;">`MenuItem`</mark>
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
-| **min** | **`Number`** | Minimum value   |
-| **max** | **`Number`** | Maximum value   |
+| Name     | Type         | Description   |
+| -------- | ------------ | ------------- |
+| **name** | **`string`** | Item name     |
+| **min**  | **`number`** | Minimum value |
+| **max**  | **`number`** | Maximum value |
 
-### add_button
+### add\_button
 
 `ui.add_button(name: string):` <mark style="color:purple;">`MenuItem`</mark>
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| **name** | **`string`** | Item name   |
 
-### add_colorpicker
+### add\_colorpicker
 
 `ui.add_colorpicker(name: string):` <mark style="color:purple;">`MenuItem`</mark>
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| **name** | **`string`** | Item name   |
 
-### add_label
+### add\_label
 
 `ui.add_label(name: string):` <mark style="color:purple;">`MenuItem`</mark>
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| **name** | **`string`** | Item name   |
 
-### add_hotkey
+### add\_hotkey
 
 `ui.add_hotkey(name: string):` <mark style="color:purple;">`MenuItem`</mark>
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| **name** | **`string`** | Item name   |
 
-### get_keybind_state
+### get\_keybind\_state
 
-`ui.get_keybind_state(name: string):` `Returns hotkey state from menu`
-
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
-
-### get_keybind_mode
-
-`ui.get_keybind_mode(name: string):` `Returns hotkey mode from menu`
+`ui.get_keybind_state(name: string)`
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
+| **name** | **`string`** | Item name   |
 
-### set_keybind_state
+Returns hotkey state from menu
 
-`ui.set_keybind_state(name: string, var: boolean):` `Sets hotkey state from menu`
+### get\_keybind\_mode
+
+`ui.get_keybind_mode(name: string)`
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **name** | **`String`** | Item name   |
-| **var** | **`Boolean`** | Item var   |
+| **name** | **`string`** | Item name   |
+
+Returns hotkey mode from menu
+
+### set\_keybind\_state
+
+`ui.set_keybind_state(name: string, var: boolean)`
+
+| Name     | Type          | Description |
+| -------- | ------------- | ----------- |
+| **name** | **`string`**  | Item name   |
+| **var**  | **`boolean`** | Item var    |
+
+Sets hotkey state from menu
 
 ## Functions:
 
-### :get()
+### :get
 
-`<element>:get():` <mark style="color:purple;">`boolean/number`</mark>
-`Returns the value received from the element`
+`<element>:get():` <mark style="color:purple;">`any`</mark>&#x20;
 
-### :set()
+Returns the value received from the element
 
-`<element>:set(var: boolean/number):` <mark style="color:purple;">`boolean/number`</mark>
-`Sets your value`
+### :set
 
-### :set_visible()
+`<element>:set(value: any)`&#x20;
 
-`<element>:set_visible(visible: boolean):` <mark style="color:purple;">`boolean`</mark>
-`Sets the visibility of the element`
+| Name      | Type      | Description                                  |
+| --------- | --------- | -------------------------------------------- |
+| **value** | **`any`** | The value to which the menu item will be set |
+
+Sets your value
+
+### :set\_visible
+
+`<element>:set_visible(state: boolean)`
+
+| Name      | Type          | Description          |
+| --------- | ------------- | -------------------- |
+| **state** | **`boolean`** | New visibility state |
+
+Sets the visibility of the element
 
 ## Combobox additive functions:
 
-### :set_items()
+### :set\_items
 
-`<element>:set_items(items: { , ... }):` <mark style="color:purple;">`items: string`</mark>
-`Sets items for combobox element`
+`<element>:set_items(items: { , ... })`
 
-### :get_items()
+| Name      | Type         | Description              |
+| --------- | ------------ | ------------------------ |
+| **items** | **`string`** | Table with string values |
 
-`<element>:get_items():` <mark style="color:purple;">`items: string`</mark>
-`Returns items from combobox element`
+Sets items for combobox element
+
+### :get\_items
+
+`<element>:get_items():` <mark style="color:purple;">`table`</mark>&#x20;
+
+Returns items from combobox element
 
 ## Hotkey additive functions:
 
-### :get_mode()
+### :get\_mode
 
-`<element>:get_mode():` <mark style="color:purple;">`mode: number`</mark>
-`Returns mode from hotkey element`
+`<element>:get_mode():` <mark style="color:purple;">`number`</mark>&#x20;
+
+Returns mode from hotkey element
