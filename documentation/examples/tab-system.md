@@ -22,7 +22,6 @@ example.second_tab.combobox = ui.add_combobox("Combo", { "1", "2", "3" })
 example.second_tab.button = ui.add_button("Button")
 
 cheat.push_callback("on_paint", function()
-
     --> Parsing first tab
     for key, val in pairs(example.first_tab) do
         val:set_visible(tabs:get() == 0 and true or false)
@@ -32,6 +31,5 @@ cheat.push_callback("on_paint", function()
     for key, val in pairs(example.second_tab) do
         val:set_visible(tabs:get() == 1 and true or false)
     end
-    
 end)
 ```

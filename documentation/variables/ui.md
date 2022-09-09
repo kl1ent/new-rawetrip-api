@@ -1,5 +1,11 @@
 # 💻 ui
 
+## Example available!
+
+{% content-ref url="../examples/ui-interaction.md" %}
+[ui-interaction.md](../examples/ui-interaction.md)
+{% endcontent-ref %}
+
 ## Elements:
 
 ### add\_checkbox
