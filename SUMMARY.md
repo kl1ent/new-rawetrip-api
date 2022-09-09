@@ -10,6 +10,8 @@
 * [📚 Examples](documentation/examples.md)
   * [⚙ Tab system](documentation/examples/tab-system.md)
   * [⚙ UI Interaction](documentation/examples/ui-interaction.md)
+  * [⚙ Clantag](useful-information/examples/ui-interaction-1.md)
+  * [⚙ Wireframe smoke](useful-information/examples/ui-interaction-2.md)
 
 ## documentation
 
