@@ -1,8 +1,76 @@
 # ⚡ vector
 
-## Fields:
+## Variables:
 
+{% tabs %}
+{% tab title="vector" %}
 `vector(x: number, y: number, z: number)`
+
+| Name  | Type         | Description |
+| ----- | ------------ | ----------- |
+| **x** | **`number`** | -           |
+| **y** | **`number`** | -           |
+| **z** | **`number`** | -           |
+
+#### How to use vector:
+
+```lua
+--> Vectors
+local new_vec = vector(255, 255, 255)
+local sec_vec = vector(2000, 100, 100)
+
+--> Length
+local new_vec_length = new_vec:length()
+
+--> Distance
+local dist = new_vec:dist_to(sec_vec)
+```
+
+###
+
+### Functions:
+{% endtab %}
+
+{% tab title="vector_2d" %}
+`vector(x: number, y: number)`
+
+| Name  | Type         | Description |
+| ----- | ------------ | ----------- |
+| **x** | **`number`** | -           |
+| **y** | **`number`** | -           |
+
+#### How to use vector\_2d:
+
+```lua
+--> Vectors
+local new_vec = vector_2d(255, 255)
+
+--> Output info
+cheat.notify(new_vec.x .. new_vec.y)
+```
+{% endtab %}
+
+{% tab title="vector_4d" %}
+`vector(x: number, y: number, z: number, w: number)`
+
+| Name  | Type         | Description |
+| ----- | ------------ | ----------- |
+| **x** | **`number`** | -           |
+| **y** | **`number`** | -           |
+| **z** | **`number`** | -           |
+| **w** | **`number`** | -           |
+
+#### How to use vector\_4d:
+
+```lua
+--> Vectors 
+local new_vec = vector_2d(255, 255, 255, 255)
+
+--> Output info 
+cheat.notify(new_vec.x .. new_vec.y .. new_vec.z .. new_vec.w)
+```
+{% endtab %}
+{% endtabs %}
 
 |       |              |   |
 | ----- | ------------ | - |
