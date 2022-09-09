@@ -24,7 +24,7 @@
 
 ### get\_player\_for\_user\_id
 
-`engine.get_player_for_user_id(userid: number)`
+`engine.get_player_for_user_id(userid: number):` <mark style="color:purple;">`entity`</mark>
 
 | Name       | Type         | Description |
 | ---------- | ------------ | ----------- |
