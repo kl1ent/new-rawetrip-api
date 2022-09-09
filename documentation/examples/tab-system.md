@@ -13,9 +13,15 @@ local example = {}
 --> Combobox with tab names
 local tabs = ui.add_combobox("tabs", { "first", "second", "third" })
 
+--> First tab
+example.first_tab = {}
+
+--> Second tab
+example.second_tab = {}
+
 --> Elements in first tab
 example.first_tab.checkbox = ui.add_checkbox("Checkbox")
-example.first_tab.slider = ui.add_sliderint("Slider")
+example.first_tab.slider = ui.add_sliderint("Slider", 0, 100)
 
 --> Elements in second tab
 example.second_tab.combobox = ui.add_combobox("Combo", { "1", "2", "3" })
