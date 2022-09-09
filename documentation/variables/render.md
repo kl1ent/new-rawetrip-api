@@ -2,7 +2,7 @@
 
 ## Functions:
 
-### screen\_size
+### get\_screen\_size
 
 `render.get_screen_size():` <mark style="color:purple;">`vector`</mark>
 
