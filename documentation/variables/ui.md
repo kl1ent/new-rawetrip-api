@@ -130,6 +130,10 @@ Sets the visibility of the element
 
 `<element>:set_items(items: { , ... })`
 
+| Name      | Type         | Description              |
+| --------- | ------------ | ------------------------ |
+| **items** | **`string`** | Table with string values |
+
 Sets items for combobox element
 
 ### :get\_items
