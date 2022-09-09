@@ -1,6 +1,6 @@
 # 💳 model\_info
 
-## Functions:
+## Model info
 
 ### get\_model\_index
 
