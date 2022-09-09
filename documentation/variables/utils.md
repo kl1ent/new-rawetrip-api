@@ -18,7 +18,13 @@ Returns text from clipboard
 
 ### get\_active\_key
 
-`utils.get_active_key():` <mark style="color:purple;">`boolean`</mark>
+{% embed url="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes" %}
+
+`utils.get_active_key(key: number):` <mark style="color:purple;">`boolean`</mark>
+
+| Name    | Type         | Description  |
+| ------- | ------------ | ------------ |
+| **key** | **`number`** | Key to check |
 
 ### get\_cursor\_position
 
