@@ -1,6 +1,16 @@
 # ⚡ vector
 
-## How to use vectors:
+## Fields:
+
+`vector(x: number, y: number, z: number)`
+
+|       |              |   |
+| ----- | ------------ | - |
+| **x** | **`number`** | - |
+| **y** | **`number`** | - |
+| **z** | **`number`** | - |
+
+## How to use vector:
 
 ```lua
 --> Vectors
