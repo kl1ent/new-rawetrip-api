@@ -17,8 +17,6 @@
   * [📞 Callbacks list](documentation/common/callbacks-list.md)
 * [⚙ Variables](documentation/variables/README.md)
   * [⚡ vector](documentation/variables/vector.md)
-  * [💈 vector\_2d](documentation/variables/vector\_2d.md)
-  * [⛓ vector\_4d](documentation/variables/vector\_4d.md)
   * [🎨 color](documentation/variables/color.md)
   * [🎓 cheat](documentation/variables/cheat.md)
   * [💻 ui](documentation/variables/ui.md)

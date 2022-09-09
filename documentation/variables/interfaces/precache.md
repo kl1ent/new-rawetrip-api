@@ -1,6 +1,6 @@
 # 🧬 precache
 
-## Precache
+## Functions:
 
 `interfaces.precache.precache_model(mdl: string)`
 

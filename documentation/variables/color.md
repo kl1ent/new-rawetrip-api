@@ -4,12 +4,12 @@
 
 `color(r: number, g: number, b: number, a: number)`
 
-|       |              |   |
-| ----- | ------------ | - |
-| **r** | **`number`** | - |
-| **g** | **`number`** | - |
-| **b** | **`number`** | - |
-| **a** | **`number`** | - |
+| Name  | Type         | Description |
+| ----- | ------------ | ----------- |
+| **r** | **`number`** | -           |
+| **g** | **`number`** | -           |
+| **b** | **`number`** | -           |
+| **a** | **`number`** | -           |
 
 
 
