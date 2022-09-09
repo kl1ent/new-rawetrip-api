@@ -2,70 +2,72 @@
 
 ## Functions:
 
-### get_menu
+### get\_menu
 
-`globalvars.get_menu():` `vector_4d`
+`globalvars.get_menu():` <mark style="color:purple;">`vector_4d`</mark>
 
-### is_open_menu
+### is\_open\_menu
 
-`globalvars.is_open_menu():` `boolean`
+`globalvars.is_open_menu():` <mark style="color:purple;">`boolean`</mark>
 
-### get_framerate
+### get\_framerate
 
-`globalvars.get_framerate():` `number`
+`globalvars.get_framerate():` <mark style="color:purple;">`number`</mark>
 
-### get_ping
+### get\_ping
 
-`globalvars.get_ping():` `number`
+`globalvars.get_ping():` <mark style="color:purple;">`number`</mark>
 
-### get_server_address
+### get\_server\_address
 
-`globalvars.get_server_address():` `string`
+`globalvars.get_server_address():` <mark style="color:purple;">`string`</mark>
 
-### get_time
+### get\_time
 
-`globalvars.get_time():` `string`
+`globalvars.get_time():` <mark style="color:purple;">`string`</mark>
 
-### get_winuser
+### get\_winuser
 
-`globalvars.get_winuser():` `string`
+`globalvars.get_winuser():` <mark style="color:purple;">`string`</mark>
 
-### get_realtime
+### get\_realtime
 
-`globalvars.get_realtime():` `number`
+`globalvars.get_realtime():` <mark style="color:purple;">`number`</mark>
 
-### get_curtime
+### get\_curtime
 
-`globalvars.get_curtime():` `number`
+`globalvars.get_curtime():` <mark style="color:purple;">`number`</mark>
 
-### get_frametime
+### get\_frametime
 
-`globalvars.get_frametime():` `number`
+`globalvars.get_frametime():` <mark style="color:purple;">`number`</mark>
 
-### get_absolute_frametime
+### get\_absolute\_frametime
 
-`globalvars.get_absolute_frametime():` `number`
+`globalvars.get_absolute_frametime():` <mark style="color:purple;">`number`</mark>
 
-### get_tickcount
+### get\_tickcount
 
-`globalvars.get_tickcount():` `number`
+`globalvars.get_tickcount():` <mark style="color:purple;">`number`</mark>
 
-### get_framecount
+### get\_framecount
 
-`globalvars.get_framecount():` `number`
+`globalvars.get_framecount():` <mark style="color:purple;">`number`</mark>
 
-### get_intervalpertick
+### get\_intervalpertick
 
-`globalvars.get_intervalpertick():` `number`
+`globalvars.get_intervalpertick():` <mark style="color:purple;">`number`</mark>
 
-### get_maxclients
+### get\_maxclients
 
-`globalvars.get_maxclients():` `number`
+`globalvars.get_maxclients():` <mark style="color:purple;">`number`</mark>
 
-### get_dt_recharging
+### get\_dt\_recharging
 
-`globalvars.get_dt_recharging():` `boolean`
+`globalvars.get_dt_recharging():` <mark style="color:purple;">`boolean`</mark>
 
-### get_spectators
+### get\_spectators
 
-`globalvars.get_spectators():` `table: number, ... | returns spectator index`
+`globalvars.get_spectators():` <mark style="color:purple;">`table`</mark>
+
+Returns spectator index

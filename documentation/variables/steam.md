@@ -2,14 +2,14 @@
 
 ## Functions:
 
-### get_user_avatar
+### get\_user\_avatar
 
-`steam.get_user_avatar():` `texture`
+`steam.get_user_avatar():` <mark style="color:purple;">`texture`</mark>
 
-### get_friend_avatar
+### get\_friend\_avatar
 
-`steam.get_friend_avatar(player_index: number):`
+`steam.get_friend_avatar(player_index: number)`
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **player_index** | **`Number`** | player_index   |
+| Name              | Type         | Description   |
+| ----------------- | ------------ | ------------- |
+| **player\_index** | **`number`** | player\_index |

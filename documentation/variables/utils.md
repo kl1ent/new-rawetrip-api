@@ -2,22 +2,24 @@
 
 ## Functions:
 
-### get_clipboard
+### get\_clipboard
 
-`utils.get_clipboard():` `Returns text from clipboard`
+`utils.get_clipboard()`
 
-### set_clipboard
+Returns text from clipboard
 
-`utils.set_clipboard(text: string):`
+### set\_clipboard
+
+`utils.set_clipboard(text: string)`
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **text** | **`String`** | text   |
+| **text** | **`string`** | text        |
 
-### get_active_key
+### get\_active\_key
 
-`utils.get_active_key():` `boolean`
+`utils.get_active_key():` <mark style="color:purple;">`boolean`</mark>
 
-### get_cursor_position
+### get\_cursor\_position
 
-`utils.get_cursor_position():` `vector_2d`
+`utils.get_cursor_position():` <mark style="color:purple;">`vector_2d`</mark>

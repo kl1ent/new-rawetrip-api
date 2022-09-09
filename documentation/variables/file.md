@@ -4,38 +4,50 @@
 
 ### append
 
-`file.append(path: string, data: string):`
+`file.append(path: string, data: string)`
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **path** | **`String`** | path   |
-| **data** | **`String`** | data   |
+| **path** | **`string`** | path        |
+| **data** | **`string`** | data        |
 
 ### write
 
-`file.write(path: string, data: string):`
+`file.write(path: string, data: string)`
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **path** | **`String`** | path   |
-| **data** | **`String`** | data   |
+| **path** | **`string`** | path        |
+| **data** | **`string`** | data        |
 
 ### read
 
-`file.read(path: string):` `string`
-
-### exists
-
-`file.exists(path: string):` `boolean`
-
-### create_dir
-
-`file.create_dir(path: string):`
+`file.read(path: string):` <mark style="color:purple;">`string`</mark>
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **path** | **`String`** | path   |
+| **path** | **`string`** | path        |
 
-### get_files_from_dir
+### exists
 
-`file.get_files_from_dir(path: string):` `table: string, ...`
+`file.exists(path: string):` <mark style="color:purple;">`boolean`</mark>
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **path** | **`string`** | path        |
+
+### create\_dir
+
+`file.create_dir(path: string)`
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **path** | **`string`** | path        |
+
+### get\_files\_from\_dir
+
+`file.get_files_from_dir(path: string):` <mark style="color:purple;">`table`</mark>
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **path** | **`string`** | path        |

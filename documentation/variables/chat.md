@@ -4,12 +4,12 @@
 
 ### print
 
-`chat.print(message: string):`
+`chat.print(message: string)`
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **message** | **`String`** | message   |
+| Name        | Type         | Description |
+| ----------- | ------------ | ----------- |
+| **message** | **`string`** | message     |
 
-### is_open
+### is\_open
 
-`chat.is_open():` `boolean`
+`chat.is_open():` <mark style="color:purple;">`boolean`</mark>

@@ -2,187 +2,158 @@
 
 ## Functions:
 
-### get\_local
+### get_local
 
-`entity.get_local():` <mark style="color:purple;">`entity`</mark>
+`entity.get_local():` `entity`
 
-### get\_player\_by\_index
+### get_player_by_index
 
-`entity.get_player_by_index(player_index: number):` <mark style="color:purple;">`entity`</mark>
+`entity.get_player_by_index(player_index: number):` `entity`
 
-| Name              | Type         | Description   |
-| ----------------- | ------------ | ------------- |
-| **player\_index** | **`number`** | player\_index |
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **player_index** | **`Number`** | player_index   |
 
-### get\_weapon\_by\_player
+### get_weapon_by_player
 
-`entity.get_player_by_index(player: entity):` <mark style="color:purple;">`weapon`</mark>
+`entity.get_player_by_index(player: entity):` `weapon`
 
-| Name       | Type         | Description |
-| ---------- | ------------ | ----------- |
-| **player** | **`entity`** | player      |
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **player** | **`Entity`** | player   |
 
-### get\_players
+### get_players
 
-`entity.get_player_by_index(ignore_team: boolean):` <mark style="color:purple;">`table`</mark>
+`entity.get_player_by_index(ignore_team: boolean):` `table: entity, ...`
 
-| Name             | Type          | Description  |
-| ---------------- | ------------- | ------------ |
-| **ignore\_team** | **`boolean`** | ignore\_team |
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **ignore_team** | **`Boolean`** | ignore_team   |
 
 ## Classes:
 
-### :get\_name
+### :get_name()
 
-`<entity>:get_name():` <mark style="color:purple;">`string`</mark>
+`<entity>:get_name():` `string`
 
-### :get\_weapons
+### :get_weapons()
 
-`<entity>:get_weapons(index: number):` <mark style="color:purple;">`weapon`</mark>
+`<entity>:get_weapons(index: number):` `weapon`
 
-| Name      | Type         | Description |
-| --------- | ------------ | ----------- |
-| **index** | **`number`** | index       |
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **index** | **`Number`** | index   |
 
-### :get\_index
+### :get_index()
 
-`<entity>:get_index():` <mark style="color:purple;">`number`</mark>
+`<entity>:get_index():` `number`
 
-### :get\_dormant
+### :get_dormant()
 
-`<entity>:get_dormant():` <mark style="color:purple;">`boolean`</mark>
+`<entity>:get_dormant():` `boolean`
 
-### :get\_team
+### :get_team()
 
-`<entity>:get_team():` <mark style="color:purple;">`number`</mark>
+`<entity>:get_team():` `number`
 
-### :is\_alive
+### :is_alive()
 
-`<entity>:is_alive():` <mark style="color:purple;">`boolean`</mark>
+`<entity>:is_alive():` `boolean`
 
-### :get\_velocity
+### :get_velocity()
 
-`<entity>:get_velocity():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_velocity():` `vector`
 
-### :get\_absorigin
+### :get_absorigin()
 
-`<entity>:get_absorigin():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_absorigin():` `vector`
 
-### :get\_angles
+### :get_angles()
 
-`<entity>:get_angles():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_angles():` `vector`
 
-### :get\_player\_hitbox\_pos
+### :get_player_hitbox_pos()
 
-`<entity>:get_player_hitbox_pos():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_player_hitbox_pos():` `vector`
 
-### :get\_muzzle\_pos
+### :get_muzzle_pos()
 
-`<entity>:get_muzzle_pos():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_muzzle_pos():` `vector`
 
-### :get\_player\_bone\_pos
+### :get_player_bone_pos()
 
-`<entity>:get_player_bone_pos():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_player_bone_pos():` `vector`
 
-### :get\_shoot\_pos
+### :get_shoot_pos()
 
-`<entity>:get_shoot_pos():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_shoot_pos():` `vector`
 
-### :has\_heavy\_arm
+### :has_heavy_arm()
 
-`<entity>:has_heavy_arm():` <mark style="color:purple;">`vector`</mark>
+`<entity>:has_heavy_arm():` `vector`
 
-### :is\_scoped
+### :is_scoped()
 
-`<entity>:is_scoped():` <mark style="color:purple;">`vector`</mark>
+`<entity>:is_scoped():` `vector`
 
-### :get\_health
+### :get_health()
 
-`<entity>:get_health():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_health():` `vector`
 
-### :get\_bbox
+### :get_bbox()
 
-`<entity>:get_bbox():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_bbox():` `vector`
 
-### :get\_body\_yaw
+### :get_body_yaw()
 
-`<entity>:get_body_yaw():` <mark style="color:purple;">`number`</mark>
+`<entity>:get_body_yaw():` `number`
 
-### :m\_flposeparameter
+### :m_flposeparameter()
 
-`<entity>:m_flposeparameter()[index: number]`
+`<entity>:m_flposeparameter()[ number ]:` `number`
 
-| Name      | Type         | Description |
-| --------- | ------------ | ----------- |
-| **index** | **`number`** | -           |
+### :set_render_pose()
 
-```lua
-cheat.push_callback("on_frame_net", function(stage)
-    if (stage == enum_frames.frame_start) then
-        local player = entity.get_local()
-        
-        if (player == nil or not player:is_alive()) then
-            return
-        end
-        
-        local flags = player:get_prop_int("CBasePlayer", "m_fFlags")
-        local on_ground = bit.band(flags, 1) == 1
-        
-        if (not on_ground) then
-            player:m_flposeparameter()[7] = 1 --> Static legs
-        end
-    end
-end)
-```
+`<entity>:set_render_pose(index: number, value: number):`
 
-### :set\_render\_pose
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **index** | **`Number`** | index   |
+| **value** | **`Number`** | value   |
 
-`<entity>:set_render_pose(index: number, value: number)`
+### :draw_hitbox()
 
-| Name      | Type         | Description |
-| --------- | ------------ | ----------- |
-| **index** | **`number`** | index       |
-| **value** | **`number`** | value       |
+`<entity>:draw_hitbox(hitbox: number, col: color, duration: number, ignore_z: boolean):`
 
-### :draw\_hitbox
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **hitbox** | **`Number`** | hitbox   |
+| **col** | **`Color`** | col   |
+| **duration** | **`Number`** | duration   |
+| **ignore_z** | **`Boolean`** | ignore_z   |
 
-`<entity>:draw_hitbox(hitbox: number, col: color, duration: number, ignore_z: boolean)`
+### :set_model_index()
 
-| Name          | Type          | Description |
-| ------------- | ------------- | ----------- |
-| **hitbox**    | **`number`**  | hitbox      |
-| **col**       | **`color`**   | col         |
-| **duration**  | **`number`**  | duration    |
-| **ignore\_z** | **`boolean`** | ignore\_z   |
+`<entity>:set_model_index(index: number):`
 
-### :set\_model\_index
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **index** | **`Number`** | index   |
 
-`<entity>:set_model_index(index: number)`
+### :get_model()
 
-| Name      | Type         | Description |
-| --------- | ------------ | ----------- |
-| **index** | **`number`** | index       |
+`<entity>:get_model():` `model`
 
-### :get\_model
+### :get_prop_int() / :get_prop_float() / :get_prop_bool() / :get_prop_string()
 
-`<entity>:get_model():` <mark style="color:purple;">`model`</mark>
+`<entity>:get_prop_int():` `number`
+`<entity>:get_prop_float():` `number`
+`<entity>:get_prop_bool():` `boolean`
+`<entity>:get_prop_string():` `string`
 
-### :get\_prop\_int / :get\_prop\_float / :get\_prop\_bool / :get\_prop\_string
+### :set_prop_int() / :set_prop_float() / :set_prop_bool() / :set_prop_string()
 
-`<entity>:get_prop_int():` <mark style="color:purple;">`number`</mark> <mark style="color:purple;"></mark><mark style="color:purple;"></mark>&#x20;
-
-`<entity>:get_prop_float():` <mark style="color:purple;">`number`</mark> <mark style="color:purple;"></mark><mark style="color:purple;"></mark>&#x20;
-
-`<entity>:get_prop_bool():` <mark style="color:purple;">`boolean`</mark> <mark style="color:purple;"></mark><mark style="color:purple;"></mark>&#x20;
-
-`<entity>:get_prop_string():` <mark style="color:purple;">`string`</mark>
-
-### :set\_prop\_int / :set\_prop\_float / :set\_prop\_bool / :set\_prop\_string
-
-`<entity>:set_prop_int(var: number)`
-
-`<entity>:set_prop_float(var: number)`
-
-`<entity>:set_prop_bool(var: boolean)`
-
-`<entity>:set_prop_string(var: string)`
+`<entity>:set_prop_int(var: number):`
+`<entity>:set_prop_float(var: number):`
+`<entity>:set_prop_bool(var: boolean):`
+`<entity>:set_prop_string(var: string):`

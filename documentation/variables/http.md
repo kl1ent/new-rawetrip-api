@@ -4,27 +4,27 @@
 
 ### get
 
-`http.get(url: string):` `string`
+`http.get(url: string):` <mark style="color:purple;">`string`</mark>
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **url** | **`String`** | url   |
+| Name    | Type         | Description |
+| ------- | ------------ | ----------- |
+| **url** | **`string`** | url         |
 
 ### post
 
-`http.post(url: string, params: string, type: number):`
+`http.post(url: string, params: string, type: number)`
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **url** | **`String`** | url   |
-| **params** | **`String`** | params   |
-| **type** | **`Number`** | type   |
+| Name       | Type         | Description |
+| ---------- | ------------ | ----------- |
+| **url**    | **`string`** | url         |
+| **params** | **`string`** | params      |
+| **type**   | **`number`** | type        |
 
 ### delete
 
-`http.delete(url: string, params: string):`
+`http.delete(url: string, params: string)`
 
-| Name     | Type         | Description |
-| -------- | ------------ | ----------- |
-| **url** | **`String`** | url   |
-| **params** | **`String`** | params   |
+| Name       | Type         | Description |
+| ---------- | ------------ | ----------- |
+| **url**    | **`string`** | url         |
+| **params** | **`string`** | params      |

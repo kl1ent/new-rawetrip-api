@@ -10,10 +10,10 @@ Callbacks list: [callbacks-list.md](../common/callbacks-list.md "mention")
 
 `cheat.push_callback(callback: string, function: func):`
 
-| Name         | Type           | Description |
-| ------------ | -------------- | ----------- |
-| **callback** | **`string`**   | callback    |
-| **function** | **`function`** | function    |
+| Name              | Type         | Description |
+| ----------------- | ------------ | ----------- |
+| **callback name** | **`String`** | callback    |
+| **function**      | **`Func`**   | function    |
 
 ### popup
 
@@ -21,8 +21,8 @@ Callbacks list: [callbacks-list.md](../common/callbacks-list.md "mention")
 
 | Name            | Type         | Description |
 | --------------- | ------------ | ----------- |
-| **header**      | **`string`** | header      |
-| **description** | **`string`** | description |
+| **header**      | **`String`** | header      |
+| **description** | **`String`** | description |
 
 ### notify
 
@@ -30,4 +30,4 @@ Callbacks list: [callbacks-list.md](../common/callbacks-list.md "mention")
 
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
-| **text** | **`string`** | text        |
+| **text** | **`String`** | text        |
