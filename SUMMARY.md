@@ -16,6 +16,7 @@
 * [⛓ Common](documentation/common/README.md)
   * [📞 Callbacks list](documentation/common/callbacks-list.md)
 * [⚙ Variables](documentation/variables/README.md)
+  * [⚡ vector](documentation/variables/vector.md)
   * [🎓 cheat](documentation/variables/cheat.md)
   * [💻 ui](documentation/variables/ui.md)
   * [🏙 render](documentation/variables/render.md)
