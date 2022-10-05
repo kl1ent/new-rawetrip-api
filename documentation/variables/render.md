@@ -26,7 +26,7 @@ local font = render.setup_font("Verdana", 12, fontflags.noantialiasing | fontfla
 
 ### setup\_weapon\_font
 
-`render.setup_weapon_font(size: number):` <mark style="color:purple;">`FontObject`</mark>
+`render.setup_font(size: number):` <mark style="color:purple;">`FontObject`</mark>
 
 | Name     | Type         | Description      |
 | -------- | ------------ | ---------------- |

@@ -2,11 +2,13 @@
 
 ## Functions:
 
+### get\_choked\_commands
+
+`utils.get_choked_commands():` <mark style="color:purple;">`number`</mark>
+
 ### get\_clipboard
 
-`utils.get_clipboard()`
-
-Returns text from clipboard
+`utils.get_clipboard():` <mark style="color:purple;">`string`</mark>
 
 ### set\_clipboard
 

@@ -32,6 +32,26 @@
 
 ## Classes:
 
+### :get\_animstate
+
+`<entity>:get_animstate():` <mark style="color:purple;">`table`</mark>
+
+### :get\_animlayer
+
+`<entity>:get_animlayer(index: number):` <mark style="color:purple;">`table`</mark>
+
+| Name      | Type         | Description     |
+| --------- | ------------ | --------------- |
+| **index** | **`number`** | Animlayer index |
+
+### :get\_sequence\_activity
+
+`<entity>:get_sequence_activity(sequence: number):` <mark style="color:purple;">`number`</mark>
+
+| Name         | Type         | Description |
+| ------------ | ------------ | ----------- |
+| **sequence** | **`number`** | Sequence    |
+
 ### :get\_name
 
 `<entity>:get_name():` <mark style="color:purple;">`string`</mark>

@@ -18,6 +18,7 @@
 * [⛓ Common](documentation/common/README.md)
   * [📞 Callbacks list](documentation/common/callbacks-list.md)
 * [⚙ Variables](documentation/variables/README.md)
+  * [📜 plist](documentation/variables/plist.md)
   * [🔫 weapon](documentation/variables/weapon.md)
   * [⚡ vector](documentation/variables/vector.md)
   * [🎨 color](documentation/variables/color.md)
