@@ -16,7 +16,7 @@
 
 ### get\_weapon\_by\_player
 
-`entity.get_player_by_index(player: entity):` <mark style="color:purple;">`weapon`</mark>
+`entity.get_weapon_by_index(player: entity):` <mark style="color:purple;">`weapon`</mark>
 
 | Name       | Type         | Description |
 | ---------- | ------------ | ----------- |
@@ -24,7 +24,7 @@
 
 ### get\_players
 
-`entity.get_player_by_index(ignore_team: boolean):` <mark style="color:purple;">`table`</mark>
+`entity.get_players(ignore_team: boolean):` <mark style="color:purple;">`table`</mark>
 
 | Name             | Type          | Description  |
 | ---------------- | ------------- | ------------ |

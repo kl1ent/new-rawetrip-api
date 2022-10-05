@@ -161,3 +161,48 @@ Returns items from combobox element
 `<element>:get_mode():` <mark style="color:purple;">`number`</mark>&#x20;
 
 Returns mode from hotkey element
+
+## Find menu items:
+
+{% tabs %}
+{% tab title="int" %}
+`ui.find_menu_int(item_name: string):` <mark style="color:purple;">`MenuItem`</mark>
+
+| Name           | Type         | Description |
+| -------------- | ------------ | ----------- |
+| **item\_name** | **`string`** | -           |
+{% endtab %}
+
+{% tab title="float" %}
+`ui.find_menu_float(item_name: string):` <mark style="color:purple;">`MenuItem`</mark>
+
+| Name           | Type         | Description |
+| -------------- | ------------ | ----------- |
+| **item\_name** | **`string`** | -           |
+{% endtab %}
+
+{% tab title="bool" %}
+`ui.find_menu_bool(item_name: string):` <mark style="color:purple;">`MenuItem`</mark>
+
+| Name           | Type         | Description |
+| -------------- | ------------ | ----------- |
+| **item\_name** | **`string`** | -           |
+{% endtab %}
+
+{% tab title="color" %}
+`ui.find_menu_color(item_name: string):` <mark style="color:purple;">`MenuItem`</mark>
+
+| Name           | Type         | Description |
+| -------------- | ------------ | ----------- |
+| **item\_name** | **`string`** | -           |
+{% endtab %}
+{% endtabs %}
+
+```lua
+--> Example
+local fake_lag_limit = ui.find_menu_int("Antiaim.fake_lag_limit")
+
+fake_lag_limit:set(10)
+
+cheat.notify(fake_lag_limit:get())
+```
