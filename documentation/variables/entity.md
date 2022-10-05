@@ -36,6 +36,45 @@
 
 `<entity>:get_animstate():` <mark style="color:purple;">`table`</mark>
 
+<details>
+
+<summary>Field</summary>
+
+m\_flUpVelocity \
+m\_bInHitGroundAnimation \
+m\_bOnGround \
+m\_fDuckAmount \
+m\_fLandingDuckAdditiveSomething \
+m\_flCurrentFeetYaw \
+m\_flCurrentTorsoYaw \
+m\_flEyeYaw \
+m\_flFeetCycle \
+m\_flFeetSpeedForwardsOrSideWays \
+m\_flFeetSpeedUnknownForwardOrSideways \
+m\_flFeetYawRate \
+m\_flGoalFeetYaw \
+m\_flHeadHeightOrOffsetFromHittingGroundAnimation m\_flLastClientSideAnimationUpdateTime \
+m\_flLastOriginZ \
+m\_flLeanAmount \
+m\_flMovingFraction \
+m\_flPitch \
+m\_flSpeedNormalized \
+m\_flStopToFullRunningFraction \
+m\_flTimeSinceStartedMoving \
+m\_flTimeSinceStoppedMoving \
+m\_iLastClientSideAnimationUpdateFramecount\
+m\_velocity \
+m\_vLastOrigin \
+m\_vOrigin \
+m\_vVelocityX \
+m\_vVelocityY
+
+### :max\_desync\_delta
+
+`<anim_state>:max_desync_delta():` <mark style="color:purple;">`number`</mark>
+
+</details>
+
 ### :get\_animlayer
 
 `<entity>:get_animlayer(index: number):` <mark style="color:purple;">`table`</mark>
@@ -43,6 +82,23 @@
 | Name      | Type         | Description     |
 | --------- | ------------ | --------------- |
 | **index** | **`number`** | Animlayer index |
+
+<details>
+
+<summary>Field</summary>
+
+m\_bClientBlend \
+m\_flBlendIn \
+m\_flCycle \
+m\_flPlaybackRate \
+m\_flPrevCycle \
+m\_flWeight \
+m\_flWeightDeltaRate \
+m\_nDispatchSequence \
+m\_nOrder \
+m\_nSequence
+
+</details>
 
 ### :get\_sequence\_activity
 
