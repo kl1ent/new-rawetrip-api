@@ -49,7 +49,7 @@ cheat.push_callback("on_paint", function()
 
     local weapon_icon = player_weapon:get_icon()
 
-    render.string(weapon_font, 200, 200, color(255, 255, 255, 255), weapon_icon)
+    render.text(weapon_font, 200, 200, color(255, 255, 255, 255), weapon_icon)
 end)
 ```
 
