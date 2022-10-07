@@ -11,7 +11,7 @@ To do something like this, you can refer to the [ui.md](../variables/ui.md "ment
 local checkbox = ui.add_checkbox("Checkbox")
 
 --> New slider
-local slider = ui.add_sliderint("Slider")
+local slider = ui.add_sliderint("Slider", 0, 100)
 
 --> New combo
 local combo = ui.add_combobox("Combo", { "First", "Second", "Third" })
