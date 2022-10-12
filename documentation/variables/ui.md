@@ -16,6 +16,8 @@
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
 
+Creates and returns a menu item object, or throws an error on failure.
+
 ### add\_combobox
 
 `ui.add_combobox(name: string, items: { , ... }):` <mark style="color:purple;">`MenuItem`</mark>
@@ -24,6 +26,8 @@
 | --------- | ------------ | ----------- |
 | **name**  | **`string`** | Item name   |
 | **items** | **`string`** | Items       |
+
+Creates and returns a menu item object, or throws an error on failure.
 
 ### add\_sliderint
 
@@ -35,6 +39,8 @@
 | **min**  | **`number`** | Minimum value |
 | **max**  | **`number`** | Maximum value |
 
+Creates and returns a menu item object, or throws an error on failure.
+
 ### add\_sliderfloat
 
 `ui.add_sliderfloat(name: string, min: number, max: number):` <mark style="color:purple;">`MenuItem`</mark>
@@ -45,6 +51,8 @@
 | **min**  | **`number`** | Minimum value |
 | **max**  | **`number`** | Maximum value |
 
+Creates and returns a menu item object, or throws an error on failure.
+
 ### add\_button
 
 `ui.add_button(name: string):` <mark style="color:purple;">`MenuItem`</mark>
@@ -52,6 +60,8 @@
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
+
+Creates and returns a menu item object, or throws an error on failure.
 
 ### add\_colorpicker
 
@@ -61,6 +71,8 @@
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
 
+Creates and returns a menu item object, or throws an error on failure.
+
 ### add\_label
 
 `ui.add_label(name: string):` <mark style="color:purple;">`MenuItem`</mark>
@@ -68,6 +80,8 @@
 | Name     | Type         | Description |
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
+
+Creates and returns a menu item object, or throws an error on failure.
 
 ### add\_hotkey
 
@@ -77,6 +91,8 @@
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
 
+Creates and returns a menu item object, or throws an error on failure.
+
 ### get\_keybind\_state
 
 `ui.get_keybind_state(name: string)`
@@ -85,7 +101,7 @@
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
 
-Returns hotkey state from menu
+Returns <mark style="color:green;">`true`</mark>, if keybind is active.
 
 ### get\_keybind\_mode
 
@@ -95,7 +111,7 @@ Returns hotkey state from menu
 | -------- | ------------ | ----------- |
 | **name** | **`string`** | Item name   |
 
-Returns hotkey mode from menu
+Returns the keybind mode.
 
 ### set\_keybind\_state
 
@@ -106,7 +122,7 @@ Returns hotkey mode from menu
 | **name** | **`string`**  | Item name   |
 | **var**  | **`boolean`** | Item var    |
 
-Sets hotkey state from menu
+Sets the keybind <mark style="color:purple;">`boolean`</mark> value.
 
 ## Functions:
 
@@ -114,7 +130,7 @@ Sets hotkey state from menu
 
 `<element>:get():` <mark style="color:purple;">`any`</mark>&#x20;
 
-Returns the value received from the element
+Returns the value of the menu item.
 
 ### :set
 
@@ -124,7 +140,7 @@ Returns the value received from the element
 | --------- | --------- | -------------------------------------------- |
 | **value** | **`any`** | The value to which the menu item will be set |
 
-Sets your value
+Sets the value of the menu item.
 
 ### :set\_visible
 
@@ -134,7 +150,7 @@ Sets your value
 | --------- | ------------- | -------------------- |
 | **state** | **`boolean`** | New visibility state |
 
-Sets the visibility of the element
+Shows or hides the menu item depending on the value of `state`.
 
 ## Combobox additive functions:
 
@@ -146,13 +162,13 @@ Sets the visibility of the element
 | --------- | ------------ | ------------------------ |
 | **items** | **`string`** | Table with string values |
 
-Sets items for combobox element
+Sets a table with items. `ui.add_combobox` menu item objects only.
 
 ### :get\_items
 
 `<element>:get_items():` <mark style="color:purple;">`table`</mark>&#x20;
 
-Returns items from combobox element
+Returns the table of items. `ui.add_combobox` menu item objects only.
 
 ## Hotkey additive functions:
 
@@ -160,7 +176,7 @@ Returns items from combobox element
 
 `<element>:get_mode():` <mark style="color:purple;">`number`</mark>&#x20;
 
-Returns mode from hotkey element
+Returns the current keybind mode. `ui.add_hotkey` menu item objects only.
 
 ## Find menu items:
 
@@ -206,3 +222,5 @@ fake_lag_limit:set(10)
 
 cheat.notify(fake_lag_limit:get())
 ```
+
+Returns the <mark style="color:purple;">`MenuItem`</mark> object that corresponds to the specified name.

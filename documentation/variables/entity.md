@@ -6,6 +6,8 @@
 
 `entity.get_local():` <mark style="color:purple;">`entity`</mark>
 
+Returns a pointer to the local player.
+
 ### get\_player\_by\_index
 
 `entity.get_player_by_index(player_index: number):` <mark style="color:purple;">`entity`</mark>
@@ -13,6 +15,8 @@
 | Name              | Type         | Description   |
 | ----------------- | ------------ | ------------- |
 | **player\_index** | **`number`** | player\_index |
+
+Returns a pointer to the specified entity.
 
 ### get\_weapon\_by\_player
 
@@ -22,6 +26,8 @@
 | ---------- | ------------ | ----------- |
 | **player** | **`entity`** | player      |
 
+Returns a pointer to the player's weapon entity.
+
 ### get\_players
 
 `entity.get_players(ignore_team: boolean):` <mark style="color:purple;">`table`</mark>
@@ -29,6 +35,8 @@
 | Name             | Type          | Description  |
 | ---------------- | ------------- | ------------ |
 | **ignore\_team** | **`boolean`** | ignore\_team |
+
+Returns the table of pointers to entities.
 
 ## Classes:
 
@@ -75,6 +83,8 @@ m\_vVelocityY
 
 </details>
 
+Returns the player animstate.
+
 ### :get\_animlayer
 
 `<entity>:get_animlayer(index: number):` <mark style="color:purple;">`table`</mark>
@@ -100,6 +110,8 @@ m\_nSequence
 
 </details>
 
+Returns the player animlayer.
+
 ### :get\_sequence\_activity
 
 `<entity>:get_sequence_activity(sequence: number):` <mark style="color:purple;">`number`</mark>
@@ -108,13 +120,19 @@ m\_nSequence
 | ------------ | ------------ | ----------- |
 | **sequence** | **`number`** | Sequence    |
 
+Returns the player sequence activity.
+
 ### :get\_name
 
 `<entity>:get_name():` <mark style="color:purple;">`string`</mark>
 
+Returns the player name.
+
 ### :get\_weapons
 
 `<entity>:get_weapons(index: number):` <mark style="color:purple;">`weapon`</mark>
+
+Returns a table containing pointers to every weapon entity the player is currently carrying.
 
 | Name      | Type         | Description |
 | --------- | ------------ | ----------- |
@@ -124,73 +142,116 @@ m\_nSequence
 
 `<entity>:get_index():` <mark style="color:purple;">`number`</mark>
 
+Returns the index of the player.
+
 ### :get\_dormant
 
 `<entity>:get_dormant():` <mark style="color:purple;">`boolean`</mark>
+
+Returns <mark style="color:green;">`true`</mark>, if the player is dormant.
 
 ### :get\_team
 
 `<entity>:get_team():` <mark style="color:purple;">`number`</mark>
 
+Returns the player team number.
+
 ### :is\_alive
 
 `<entity>:is_alive():` <mark style="color:purple;">`boolean`</mark>
+
+Returns <mark style="color:green;">`true`</mark>, if the player is alive.
 
 ### :get\_velocity
 
 `<entity>:get_velocity():` <mark style="color:purple;">`vector`</mark>
 
+Returns the velocity vector of the player.
+
 ### :get\_absorigin
 
 `<entity>:get_absorigin():` <mark style="color:purple;">`vector`</mark>
+
+Returns the absolute position vector of the player.
 
 ### :get\_angles
 
 `<entity>:get_angles():` <mark style="color:purple;">`vector`</mark>
 
+Returns the angles of the player.
+
 ### :get\_player\_hitbox\_pos
 
 `<entity>:get_player_hitbox_pos():` <mark style="color:purple;">`vector`</mark>
+
+Returns the position of the specified hitbox.
 
 ### :get\_muzzle\_pos
 
 `<entity>:get_muzzle_pos():` <mark style="color:purple;">`vector`</mark>
 
+Returns the position of the muzzle.
+
 ### :get\_player\_bone\_pos
 
 `<entity>:get_player_bone_pos():` <mark style="color:purple;">`vector`</mark>
+
+Returns the position of the specified bone.
 
 ### :get\_shoot\_pos
 
 `<entity>:get_shoot_pos():` <mark style="color:purple;">`vector`</mark>
 
+Returns the position of the shoot.
+
 ### :has\_heavy\_arm
 
 `<entity>:has_heavy_arm():` <mark style="color:purple;">`vector`</mark>
+
+Returns <mark style="color:green;">`true`</mark>, if the player has heavy armor
 
 ### :is\_scoped
 
 `<entity>:is_scoped():` <mark style="color:purple;">`vector`</mark>
 
+Returns <mark style="color:green;">`true`</mark>, if the player is scoped.
+
 ### :get\_health
 
 `<entity>:get_health():` <mark style="color:purple;">`vector`</mark>
 
+Returns the player health.
+
 ### :get\_bbox
 
-`<entity>:get_bbox():` <mark style="color:purple;">`vector`</mark>
+`<entity>:get_bbox():` <mark style="color:purple;">`table`</mark>
+
+Returns a table containing <mark style="color:blue;">`x`</mark>, <mark style="color:blue;">`y`</mark>, <mark style="color:blue;">`w`</mark>, and <mark style="color:blue;">`h`</mark> values.
 
 ### :get\_body\_yaw
 
 `<entity>:get_body_yaw():` <mark style="color:purple;">`number`</mark>
 
+Returns the player body yaw.
+
 ### :m\_flposeparameter
 
-`<entity>:m_flposeparameter()[index: number]`
+`<entity>:m_flposeparameter()[index: number]:` <mark style="color:purple;">`number`</mark>
 
 | Name      | Type         | Description |
 | --------- | ------------ | ----------- |
 | **index** | **`number`** | -           |
+
+Returns the player pose parameters.
+
+### :set\_render\_pose
+
+`<entity>:set_render_pose(index: number, value: number)`
+
+| Name      | Type         | Description |
+| --------- | ------------ | ----------- |
+| **index** | **`number`** | index       |
+| **value** | **`number`** | value       |
 
 ```lua
 cheat.push_callback("on_frame_net", function(stage)
@@ -205,20 +266,13 @@ cheat.push_callback("on_frame_net", function(stage)
         local on_ground = bit.band(flags, 1) == 1
         
         if (not on_ground) then
-            player:m_flposeparameter()[7] = 1 --> Static legs
+            player:set_render_pose(6, 1) --> Static legs
         end
     end
 end)
 ```
 
-### :set\_render\_pose
-
-`<entity>:set_render_pose(index: number, value: number)`
-
-| Name      | Type         | Description |
-| --------- | ------------ | ----------- |
-| **index** | **`number`** | index       |
-| **value** | **`number`** | value       |
+Sets the values of the pose parameters.
 
 ### :draw\_hitbox
 
@@ -231,6 +285,8 @@ end)
 | **duration**  | **`number`**  | duration    |
 | **ignore\_z** | **`boolean`** | ignore\_z   |
 
+Draws a specific player hitbox.
+
 ### :set\_model\_index
 
 `<entity>:set_model_index(index: number)`
@@ -239,9 +295,13 @@ end)
 | --------- | ------------ | ----------- |
 | **index** | **`number`** | index       |
 
+Sets the index of the model to the player.
+
 ### :get\_model
 
 `<entity>:get_model():` <mark style="color:purple;">`model`</mark>
+
+Returns the player model.
 
 ## Getting prop values
 

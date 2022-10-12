@@ -10,6 +10,8 @@
 | ------------ | ------------ | ----------------------- |
 | **position** | **`vector`** | Position in world space |
 
+Returns the screen position vector. This can only be called from the on\_paint callback.
+
 ### setup\_font
 
 `render.setup_font(name: string, size: number, flags: number):` <mark style="color:purple;">`FontObject`</mark>
@@ -24,13 +26,17 @@
 local font = render.setup_font("Verdana", 12, fontflags.noantialiasing | fontflags.bold)
 ```
 
+Returns the <mark style="color:purple;">`FontObject`</mark> struct or nil on failure.
+
 ### setup\_weapon\_font
 
-`render.setup_font(size: number):` <mark style="color:purple;">`FontObject`</mark>
+`render.setup_weapon_font(size: number):` <mark style="color:purple;">`FontObject`</mark>
 
 | Name     | Type         | Description      |
 | -------- | ------------ | ---------------- |
 | **size** | **`number`** | Size of the font |
+
+Returns the <mark style="color:purple;">`FontObject`</mark> struct or nil on failure.
 
 ### setup\_texture
 
@@ -40,6 +46,8 @@ local font = render.setup_font("Verdana", 12, fontflags.noantialiasing | fontfla
 | ------------------------------------------- | -------- | ----------------- |
 | <mark style="color:purple;">**path**</mark> | `string` | Path to the image |
 
+Returns the <mark style="color:purple;">`texture`</mark> <mark style="color:purple;"></mark><mark style="color:purple;"></mark> or nil on failure.
+
 ### get\_text\_size
 
 `render.get_text_size(font: FontObject, text: string):` <mark style="color:purple;">`vector`</mark>
@@ -48,6 +56,8 @@ local font = render.setup_font("Verdana", 12, fontflags.noantialiasing | fontfla
 | -------- | ---------------- | -------------------------- |
 | **font** | **`FontObject`** | Font                       |
 | **text** | **`string`**     | Text that will be measured |
+
+Returns the size of the text.
 
 ## Structs
 
@@ -269,6 +279,10 @@ local font = render.setup_font("Verdana", 12, fontflags.noantialiasing | fontfla
 | **width**  | **`number`** | Width       |
 | **height** | **`number`** | Height      |
 
+Applies the clip region to the given rectangle for all subsequent elements.
+
 ### end\_cliprect
 
 `render.end_cliprect()`
+
+Discards an early set rectangle clipping region.
