@@ -10,7 +10,7 @@
 | -------- | ------------ | ----------- |
 | **text** | **`string`** | text        |
 
-Returns encoded text
+Returns encoded text.
 
 ### decode
 
@@ -20,4 +20,4 @@ Returns encoded text
 | -------- | ------------ | ----------- |
 | **text** | **`string`** | text        |
 
-Returns decoded text
+Returns decoded text.

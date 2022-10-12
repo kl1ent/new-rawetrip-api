@@ -12,6 +12,8 @@
 | **end**   | **`number`** | end         |
 | **speed** | **`number`** | speed       |
 
+Returns a smooth number change.
+
 ### lerp\_color
 
 `animate.lerp_color(start: color, end: color, speed: number):`
@@ -21,3 +23,5 @@
 | **start** | **`color`**  | start       |
 | **end**   | **`color`**  | end         |
 | **speed** | **`number`** | speed       |
+
+Returns a smooth color change.
