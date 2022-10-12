@@ -23,7 +23,7 @@ Functions for interacting with the player list
 | **entindex** | **`number`** | Player index      |
 | **field**    | **`string`** | Name of the field |
 
-Functions to get the <mark style="color:purple;">`boolean`</mark> value
+Functions to get the boolean value
 
 ### get\_float
 
@@ -34,4 +34,4 @@ Functions to get the <mark style="color:purple;">`boolean`</mark> value
 | **entindex** | **`number`** | Player index      |
 | **field**    | **`string`** | Name of the field |
 
-Functions to get the <mark style="color:purple;">`float`</mark> value
+Functions to get the float value

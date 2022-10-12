@@ -96,7 +96,7 @@ Returns the size of the text.
 
 ### polygon
 
-`render.polygon(color: color, positions: { , ... })`
+`render.polygon(color: color, positions: {, ...})`
 
 |               |              |                      |
 | ------------- | ------------ | -------------------- |
@@ -105,7 +105,7 @@ Returns the size of the text.
 
 ### polyline
 
-`render.polyline(color: color, closed: boolean, thickness: number, positions: { , ... })`
+`render.polyline(color: color, closed: boolean, thickness: number, positions: {, ...})`
 
 |               |               |                           |
 | ------------- | ------------- | ------------------------- |

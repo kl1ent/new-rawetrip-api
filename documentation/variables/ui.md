@@ -20,7 +20,7 @@ Creates and returns a menu item object, or throws an error on failure.
 
 ### add\_combobox
 
-`ui.add_combobox(name: string, items: { , ... }):` <mark style="color:purple;">`MenuItem`</mark>
+`ui.add_combobox(name: string, items: {, ...}):` <mark style="color:purple;">`MenuItem`</mark>
 
 | Name      | Type         | Description |
 | --------- | ------------ | ----------- |
@@ -156,7 +156,7 @@ Shows or hides the menu item depending on the value of `state`.
 
 ### :set\_items
 
-`<element>:set_items(items: { , ... })`
+`<element>:set_items(items: {, ...})`
 
 | Name      | Type         | Description              |
 | --------- | ------------ | ------------------------ |
