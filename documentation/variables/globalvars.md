@@ -9,7 +9,7 @@
 <mark style="color:blue;">`x`</mark> - Menu position on the X axis.\
 <mark style="color:blue;">`y`</mark> - Menu position on the Y axis.\
 <mark style="color:blue;">`z`</mark> - Menu width.\
-<mark style="color:blue;">`h`</mark> - Menu height.
+<mark style="color:blue;">`w`</mark> - Menu height.
 
 Returns menu options.
 
