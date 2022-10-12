@@ -16,7 +16,7 @@ Returns a pointer to the local player.
 | ----------------- | ------------ | ------------- |
 | **player\_index** | **`number`** | player\_index |
 
-Returns a pointer to the specified entity.
+Returns a pointer to the specified player.
 
 ### get\_weapon\_by\_player
 
