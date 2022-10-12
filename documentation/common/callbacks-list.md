@@ -18,6 +18,8 @@ end)
 
 ### on\_paint
 
+Fired every frame. Most functions from the [`render`](broken-reference) namespace can only be used here.
+
 ```lua
 cheat.push_callback("on_paint", function()
     render.rect_filled(200, 200, 100, 20, color(255, 255, 255, 255))
@@ -25,6 +27,8 @@ end)
 ```
 
 ### on\_createmove
+
+Fired every time the game prepares a move command. Use the parameter passed by the callback to access the [`UserCmd`](callbacks-list.md#struct-usercmd).
 
 ```lua
 cheat.push_callback("on_createmove", function(cmd)
@@ -34,11 +38,15 @@ end)
 
 ### after\_prediction
 
+Use the parameter passed by the callback to access the [`UserCmd`](callbacks-list.md#struct-usercmd).
+
 ```lua
 cheat.push_callback("after_prediction", function(cmd)
     cmd.viewangles.z = 50
 end)
 ```
+
+#### 🔗 struct <mark style="color:blue;">`UserCmd`</mark>
 
 | Name                | Type         | Description              |
 | ------------------- | ------------ | ------------------------ |
@@ -65,6 +73,8 @@ end)
 
 ### on\_override\_view
 
+Fired every time the game prepares camera view.
+
 ```lua
 cheat.push_callback("on_override_view", function(view)
     view.fov = 20
@@ -88,6 +98,8 @@ end)
 
 ### on\_unload
 
+Fired when the script is about to unload.
+
 ```lua
 cheat.push_callback("on_unload", function()
     cheat.notify("Script unloaded!")
@@ -95,6 +107,8 @@ end)
 ```
 
 ### on\_shot
+
+Fired every time the aimbot shoots at a player.
 
 ```lua
 cheat.push_callback("on_shot", function(shot_info)
