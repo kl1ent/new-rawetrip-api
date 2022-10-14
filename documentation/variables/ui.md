@@ -122,7 +122,7 @@ Returns the keybind mode.
 | **name** | **`string`**  | Item name   |
 | **var**  | **`boolean`** | Item var    |
 
-Sets the keybind <mark style="color:purple;">`boolean`</mark> value.
+Sets the keybind boolean value.
 
 ## Functions:
 
@@ -151,6 +151,40 @@ Sets the value of the menu item.
 | **state** | **`boolean`** | New visibility state |
 
 Shows or hides the menu item depending on the value of `state`.
+
+### :set\_callback
+
+{% hint style="warning" %}
+Works only in callbacks.
+{% endhint %}
+
+`<element>:set_callback(callback: function)`
+
+| Name         | Type           | Description                                                        |
+| ------------ | -------------- | ------------------------------------------------------------------ |
+| **callback** | **`function`** | Function that will be called when the menu item is interacted with |
+
+```lua
+local checkbox = ui.add_checkbox("Checkbox")
+
+cheat.push_callback("on_paint", function()
+    checkbox:set_callback(function()
+        cheat.notify("Callback")
+    end)
+end)
+```
+
+Sets the callback to the specified menu item.
+
+### :set\_group
+
+`<element>:set_group(group: number)`
+
+| Name      | Type         | Description                                                                                                                              |
+| --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **group** | **`number`** | <p><mark style="color:purple;"><code>1</code></mark> - Left group<br><mark style="color:purple;"><code>2</code></mark> - Right group</p> |
+
+Sets the group to the specified menu item.
 
 ## Combobox additive functions:
 

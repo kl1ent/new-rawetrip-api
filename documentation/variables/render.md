@@ -239,6 +239,24 @@ Returns the size of the text.
 | **shadow**  | **`boolean`**    | Optional. Text shadow   |
 | **outline** | **`boolean`**    | Optional. Text outline  |
 
+### text\_gradient
+
+📌 Render any text via the [`:setup_font`](render.md#setup\_font) or [`:setup_weapon_font`](render.md#setup\_weapon\_font) function.
+
+`render.text_gradient(font: FontObject, x: number, y: number, color: color, second_color: color, text: string, smooth: number[, shadow: boolean, outline: boolean])`
+
+| Name              | Type             | Description                |
+| ----------------- | ---------------- | -------------------------- |
+| **font**          | **`FontObject`** | Font                       |
+| **x**             | **`number`**     | X position                 |
+| **y**             | **`number`**     | Y position                 |
+| **color**         | **`color`**      | Color of the text          |
+| **second\_color** | **`color`**      | Second color of the text   |
+| **text**          | **`string`**     | Text that will be drawn    |
+| **smooth**        | **`number`**     | Smoothness of the gradient |
+| **shadow**        | **`boolean`**    | Optional. Text shadow      |
+| **outline**       | **`boolean`**    | Optional. Text outline     |
+
 ### image
 
 `render.image(texture: texture, x: number, y: number, width: number, height: number, color: color[, rounding: number])`
@@ -257,16 +275,31 @@ Returns the size of the text.
 
 `render.rect_shadow(x: number, y: number, width: number, height: number, length: number, color: color[, x_offset: number, y_offset: number])`
 
-| Name          | Type         | Description         |
-| ------------- | ------------ | ------------------- |
-| **x**         | **`number`** | X position          |
-| **y**         | **`number`** | Y position          |
-| **width**     | **`number`** | Width               |
-| **height**    | **`number`** | Height              |
-| **length**    | **`number`** | Shadow length       |
-| **color**     | **`color`**  | Color of the shadow |
-| **x\_offset** | **`number`** | Optional. X offset  |
-| **y\_offset** | **`number`** | Optional. Y offset  |
+| Name          | Type         | Description        |
+| ------------- | ------------ | ------------------ |
+| **x**         | **`number`** | X position         |
+| **y**         | **`number`** | Y position         |
+| **width**     | **`number`** | Width              |
+| **height**    | **`number`** | Height             |
+| **length**    | **`number`** | Shadow length      |
+| **color**     | **`color`**  | Shadow color       |
+| **x\_offset** | **`number`** | Optional. X offset |
+| **y\_offset** | **`number`** | Optional. Y offset |
+
+### rect\_shadow\_ex
+
+`render.rect_shadow_ex(position: vector_2d, size: vector_2d, rings: number, sbr: vector, length: number, color: color[, x_offset: number, y_offset: number])`
+
+| Name          | Type            | Description                                                                       |
+| ------------- | --------------- | --------------------------------------------------------------------------------- |
+| **position**  | **`vector_2d`** | Shadow position                                                                   |
+| **size**      | **`vector_2d`** | Shadow size                                                                       |
+| **rings**     | **`number`**    | Shadow rings                                                                      |
+| **sbr**       | **`vector`**    | `vector(between_rings: number, per_corner_side: number, between_samples: number)` |
+| **length**    | **`number`**    | Shadow length                                                                     |
+| **color**     | **`color`**     | Shadow color                                                                      |
+| **x\_offset** | **`number`**    | Optional. X offset                                                                |
+| **y\_offset** | **`number`**    | Optional. Y offset                                                                |
 
 ### begin\_cliprect
 
