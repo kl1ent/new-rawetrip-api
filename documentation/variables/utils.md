@@ -41,3 +41,22 @@ Returns <mark style="color:green;">`true`</mark>, if the button is active.
 `utils.get_cursor_position():` <mark style="color:purple;">`vector_2d`</mark>
 
 Returns the current mouse position.
+
+### mouse\_rect
+
+`utils.mouse_rect(x: number, y: number, width: number, height: number):` <mark style="color:purple;">`boolean`</mark>
+
+| Name       | Type         | Description |
+| ---------- | ------------ | ----------- |
+| **x**      | **`number`** | X position  |
+| **y**      | **`number`** |             |
+| **width**  | **`number`** |             |
+| **height** | **`number`** |             |
+
+Returns if the mouse is at the specified position.
+
+### get\_mouse\_scroll
+
+`utils.get_mouse_scroll():` <mark style="color:purple;">`number`</mark>
+
+Returns <mark style="color:blue;">`-1.0`</mark> if the mouse wheel is spinning down, <mark style="color:blue;">`1.0`</mark> if the mouse wheel is spinning up, and <mark style="color:blue;">`0.0`</mark> if the mouse wheel is not rotating.

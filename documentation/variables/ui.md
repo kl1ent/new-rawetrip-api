@@ -93,6 +93,16 @@ Creates and returns a menu item object, or throws an error on failure.
 
 Creates and returns a menu item object, or throws an error on failure.
 
+### add\_input
+
+`ui.add_input(name: string):` <mark style="color:purple;">`MenuItem`</mark>
+
+| Name     | Type         | Description |
+| -------- | ------------ | ----------- |
+| **name** | **`string`** | Item name   |
+
+Creates and returns a menu item object, or throws an error on failure.
+
 ### get\_keybind\_state
 
 `ui.get_keybind_state(name: string)`

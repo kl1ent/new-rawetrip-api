@@ -20,7 +20,7 @@ Returns a pointer to the specified player.
 
 ### get\_weapon\_by\_player
 
-`entity.get_weapon_by_index(player: entity):` <mark style="color:purple;">`weapon`</mark>
+`entity.get_weapon_by_player(player: entity):` <mark style="color:purple;">`weapon`</mark>
 
 | Name       | Type         | Description |
 | ---------- | ------------ | ----------- |
