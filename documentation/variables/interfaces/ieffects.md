@@ -47,7 +47,7 @@
 
 ### dust
 
-`interfaces.ieffects.muzzle_flash(pos: vector, direction: vector, size: number, speed: number)`
+`interfaces.ieffects.dust(pos: vector, direction: vector, size: number, speed: number)`
 
 | Name          | Type         | Description |
 | ------------- | ------------ | ----------- |
